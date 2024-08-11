@@ -6,7 +6,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<ChakraProvider resetCSS={false}>
+		<ChakraProvider>
 			<App />
 		</ChakraProvider>
 	</StrictMode>
