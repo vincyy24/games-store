@@ -5,13 +5,17 @@ const ColorModeSwitch = () => {
 
 	return (
 		<HStack>
-			<Text>☀️</Text>
+			<Text onClick={toggleColorMode} cursor="pointer">
+				☀️
+			</Text>
 			<Switch
 				colorScheme="green"
 				isChecked={colorMode === "dark"}
 				onChange={toggleColorMode}
 			/>
-			<Text>🌙</Text>
+			<Text onClick={toggleColorMode} cursor="pointer">
+				🌙
+			</Text>
 		</HStack>
 	);
 };
