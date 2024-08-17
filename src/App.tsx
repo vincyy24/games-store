@@ -47,7 +47,7 @@ function App() {
 						/>
 					</GridItem>
 				</Show>
-				<GridItem area={"main"}>
+				<GridItem area={"main"} px={3}>
 					<GameHeading gameQuery={gameQuery} />
 					<HStack spacing={3}>
 						<PlatformSelector
