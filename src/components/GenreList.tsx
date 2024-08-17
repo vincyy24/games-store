@@ -33,7 +33,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 	}
 	return (
 		<>
-			<Heading my={3} fontSize={"3xl"}>Genres</Heading>
+			<Heading my={3} fontSize={"3xl"}>
+				Genres
+			</Heading>
 			<List>
 				<ListItem paddingY={3}>
 					<Button
