@@ -33,9 +33,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 	}
 	return (
 		<>
-			<Heading my={3}>Genres</Heading>
+			<Heading my={3} fontSize={"3xl"}>Genres</Heading>
 			<List>
-				<ListItem paddingY="5px">
+				<ListItem paddingY={3}>
 					<Button
 						isActive={selectedGenre === null}
 						onClick={() => onSelectGenre(null)}
@@ -49,6 +49,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 							<Image
 								boxSize="35px"
 								borderRadius={8}
+								objectFit="cover"
 								src={getCroppedImageUrl(genre.image_background)}
 							/>
 							<Button
